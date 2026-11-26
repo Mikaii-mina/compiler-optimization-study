@@ -1,0 +1,26 @@
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/histogram.c:9:26: missed: couldn't vectorize loop
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/histogram.c:10:18: missed: possible alias involving gather/scatter between *_5 and *_5
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/histogram.c:6:6: note: vectorized 0 loops in function.
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/histogram.c:12:1: note: ***** Analysis failed with vector mode V16QI
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/histogram.c:12:1: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V16QI
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/histogram.c:27:36: missed: couldn't vectorize loop
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/histogram.c:27:36: missed: unsupported SLP instances
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/histogram.c:25:26: missed: couldn't vectorize loop
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/histogram.c:25:46: missed: possible alias involving gather/scatter between expected[_11] and expected[_11]
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/histogram.c:9:26: missed: couldn't vectorize loop
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/histogram.c:10:18: missed: possible alias involving gather/scatter between *_53 and *_53
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/histogram.c:21:26: optimized: loop vectorized using 16 byte vectors and unroll factor 16
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/histogram.c:14:5: note: vectorized 1 loops in function.
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/histogram.c:15:27: missed: statement clobbers memory: n_31 = strtoul (_1, 0B, 10);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/histogram.c:17:28: missed: statement clobbers memory: input_33 = malloc (n_41);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/histogram.c:31:5: missed: statement clobbers memory: printf ("PASS histogram n=%zu buckets=%d checksum=%llu\n", n_41, 64, checksum_91);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/histogram.c:33:5: missed: statement clobbers memory: free (input_33);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/histogram.c:28:52: missed: statement clobbers memory: free (input_33);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/histogram.c:29:18: note: ***** Analysis failed with vector mode V2DI
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/histogram.c:29:18: note: ***** The result for vector mode V16QI would be the same
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/histogram.c:29:18: note: ***** Re-trying analysis with vector mode V8QI
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/histogram.c:29:18: note: ***** Analysis failed with vector mode V8QI
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/histogram.c:29:18: note: ***** Re-trying analysis with vector mode V4HI
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/histogram.c:29:18: note: ***** Analysis failed with vector mode V4HI
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/histogram.c:29:18: note: ***** Re-trying analysis with vector mode V2SI
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/histogram.c:29:18: note: ***** Analysis failed with vector mode V2SI

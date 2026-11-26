@@ -1,0 +1,16 @@
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/indirect_gather.c:7:5: remark: the cost-model indicates that vectorization is not beneficial [-Rpass-analysis=loop-vectorize]
+    7 |     for (size_t i = 0; i < n; ++i) {
+      |     ^
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/indirect_gather.c:7:5: remark: interleaved loop (interleaved count: 4) [-Rpass=loop-vectorize]
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/indirect_gather.c:21:5: remark: the cost-model indicates that vectorization is not beneficial [-Rpass-analysis=loop-vectorize]
+   21 |     for (size_t i = 0; i < n; ++i) {
+      |     ^
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/indirect_gather.c:21:5: remark: interleaved loop (interleaved count: 4) [-Rpass=loop-vectorize]
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/indirect_gather.c:7:5: remark: the cost-model indicates that vectorization is not beneficial [-Rpass-analysis=loop-vectorize]
+    7 |     for (size_t i = 0; i < n; ++i) {
+      |     ^
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/indirect_gather.c:7:5: remark: interleaved loop (interleaved count: 4) [-Rpass=loop-vectorize]
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/indirect_gather.c:27:5: remark: loop not vectorized: Cannot vectorize early exit loop with reductions or recurrences [-Rpass-analysis=loop-vectorize]
+   27 |     for (size_t i = 0; i < n; ++i) {
+      |     ^
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/indirect_gather.c:27:5: remark: loop not vectorized [-Rpass-missed=loop-vectorize]

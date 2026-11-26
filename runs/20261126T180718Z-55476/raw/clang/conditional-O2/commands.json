@@ -1,0 +1,61 @@
+{
+  "assembly": [
+    "/usr/bin/clang",
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-O2",
+    "-Rpass=loop-vectorize",
+    "-Rpass-missed=loop-vectorize",
+    "-Rpass-analysis=loop-vectorize",
+    "-S",
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/conditional.c",
+    "-o",
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/clang/conditional-O2/benchmark.s"
+  ],
+  "compile": [
+    "/usr/bin/clang",
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-O2",
+    "-Rpass=loop-vectorize",
+    "-Rpass-missed=loop-vectorize",
+    "-Rpass-analysis=loop-vectorize",
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/conditional.c",
+    "-o",
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/clang/conditional-O2/correctness.exe"
+  ],
+  "kernel_object": [
+    "/usr/bin/clang",
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-O2",
+    "-Dmain=benchmark_original_main",
+    "-c",
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/conditional.c",
+    "-o",
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/clang/conditional-O2/kernel.o"
+  ],
+  "timing_exe": [
+    "/usr/bin/clang",
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-O2",
+    "-DBENCHMARK_ID=3",
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/scripts/timing_harness.c",
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/clang/conditional-O2/kernel.o",
+    "-o",
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/clang/conditional-O2/timing.exe"
+  ],
+  "correctness_small": [
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/clang/conditional-O2/correctness.exe",
+    "32768"
+  ],
+  "correctness_large": [
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/clang/conditional-O2/correctness.exe",
+    "1000000"
+  ]
+}

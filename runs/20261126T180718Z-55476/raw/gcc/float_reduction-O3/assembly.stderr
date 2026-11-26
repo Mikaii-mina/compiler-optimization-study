@@ -1,0 +1,19 @@
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/float_reduction.c:8:26: missed: couldn't vectorize loop
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/float_reduction.c:8:26: missed: Loop costings may not be worthwhile.
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/float_reduction.c:5:7: note: vectorized 0 loops in function.
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/float_reduction.c:11:12: note: ***** Analysis failed with vector mode V4SF
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/float_reduction.c:11:12: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V4SF
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/float_reduction.c:22:26: missed: couldn't vectorize loop
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/float_reduction.c:22:26: missed: Loop costings may not be worthwhile.
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/float_reduction.c:8:26: missed: couldn't vectorize loop
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/float_reduction.c:8:26: missed: Loop costings may not be worthwhile.
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/float_reduction.c:19:26: missed: couldn't vectorize loop
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/float_reduction.c:19:26: missed: unsupported SLP instances
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/float_reduction.c:14:5: note: vectorized 0 loops in function.
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/float_reduction.c:15:27: missed: statement clobbers memory: n_28 = strtoul (_1, 0B, 10);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/float_reduction.c:17:20: missed: statement clobbers memory: input_30 = malloc (_3);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/float_reduction.c:26:5: missed: statement clobbers memory: printf ("PASS float_reduction n=%zu sum=%.9g reference=%.9g\n", n_42, _14, reference_87);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/float_reduction.c:28:5: missed: statement clobbers memory: free (input_30);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/float_reduction.c:25:51: missed: statement clobbers memory: free (input_30);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/float_reduction.c:25:51: note: ***** Analysis failed with vector mode V2DI
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/float_reduction.c:25:51: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI

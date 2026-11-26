@@ -1,0 +1,27 @@
+{
+  "kernel": [
+    "/usr/bin/clang",
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-O0",
+    "-Dmain=benchmark_original_main",
+    "-c",
+    "/Users/miramikaii/Desktop/\u9879\u76ee/compiler-optimization-study/benchmarks/stencil.c",
+    "-o",
+    "/Users/miramikaii/Desktop/\u9879\u76ee/compiler-optimization-study/raw-results/timer-validation/20261126T142639Z-timercheck-51013/clang/O0/stencil/kernel.o"
+  ],
+  "driver": [
+    "/usr/bin/clang",
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-O2",
+    "-DBENCHMARK_ID=4",
+    "/Users/miramikaii/Desktop/\u9879\u76ee/compiler-optimization-study/scripts/timing_harness.c",
+    "/Users/miramikaii/Desktop/\u9879\u76ee/compiler-optimization-study/raw-results/timer-validation/20261126T142639Z-timercheck-51013/clang/O0/stencil/kernel.o",
+    "-o",
+    "/Users/miramikaii/Desktop/\u9879\u76ee/compiler-optimization-study/raw-results/timer-validation/20261126T142639Z-timercheck-51013/clang/O0/stencil/timing"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "assembly": [
+    "/opt/homebrew/bin/gcc-16",
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-O3",
+    "-fopt-info-vec-all",
+    "-S",
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/strided.c",
+    "-o",
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/gcc/strided-O3/benchmark.s"
+  ],
+  "compile": [
+    "/opt/homebrew/bin/gcc-16",
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-O3",
+    "-fopt-info-vec-all",
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/strided.c",
+    "-o",
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/gcc/strided-O3/correctness.exe"
+  ],
+  "kernel_object": [
+    "/opt/homebrew/bin/gcc-16",
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-O3",
+    "-Dmain=benchmark_original_main",
+    "-c",
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/strided.c",
+    "-o",
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/gcc/strided-O3/kernel.o"
+  ],
+  "timing_exe": [
+    "/opt/homebrew/bin/gcc-16",
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-O2",
+    "-DBENCHMARK_ID=5",
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/scripts/timing_harness.c",
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/gcc/strided-O3/kernel.o",
+    "-o",
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/gcc/strided-O3/timing.exe"
+  ],
+  "correctness_small": [
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/gcc/strided-O3/correctness.exe",
+    "32768"
+  ],
+  "correctness_large": [
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/gcc/strided-O3/correctness.exe",
+    "1000000"
+  ]
+}

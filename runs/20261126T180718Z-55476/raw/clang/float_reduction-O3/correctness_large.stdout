@@ -1,0 +1,1 @@
+PASS float_reduction n=1000000 sum=202520.906 reference=202327.629

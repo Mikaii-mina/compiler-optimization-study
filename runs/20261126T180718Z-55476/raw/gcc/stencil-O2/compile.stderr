@@ -1,0 +1,50 @@
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:5:34: missed: couldn't vectorize loop
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:9:65: missed: not vectorized: complicated access pattern.
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:7:38: optimized: loop vectorized using 16 byte vectors and unroll factor 4
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:4:6: note: vectorized 1 loops in function.
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:10:42: note: ***** Analysis failed with vector mode V4SI
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:10:42: note: ***** The result for vector mode V16QI would be the same
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:10:42: note: ***** The result for vector mode V8QI would be the same
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:10:42: note: ***** The result for vector mode V4HI would be the same
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:10:42: note: ***** Re-trying analysis with vector mode V2SI
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:10:42: note: ***** Analysis failed with vector mode V2SI
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:34:16: missed: couldn't vectorize loop
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:34:16: missed: not vectorized: unsupported control flow in loop.
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:26:34: missed: couldn't vectorize loop
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:26:34: missed: not vectorized: unsupported control flow in loop.
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:22:26: missed: couldn't vectorize loop
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:22:26: missed: unsupported SLP instances
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:15:5: note: vectorized 0 loops in function.
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:16:30: missed: statement clobbers memory: side_49 = strtoul (_1, 0B, 10);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:19:18: missed: statement clobbers memory: input_52 = malloc (_3);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:20:19: missed: statement clobbers memory: output_54 = calloc (powmult_84, 4);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:23:5: missed: statement clobbers memory: kernel (input_52, output_54, side_67);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:38:5: missed: statement clobbers memory: printf ("PASS stencil side=%zu checksum=%lld\n", side_67, checksum_92);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:39:5: missed: statement clobbers memory: free (input_52);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:39:18: missed: statement clobbers memory: free (output_54);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:34:44: missed: statement clobbers memory: free (input_52);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:34:57: missed: statement clobbers memory: free (output_54);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:21:30: missed: statement clobbers memory: free (input_52);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:21:43: missed: statement clobbers memory: free (output_54);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:31:69: note: ***** Analysis succeeded with vector mode V2DI
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:31:69: note: SLPing BB part
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:31:69: note: Costing subgraph: 
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:31:69: note: node 0x8c89604a0 (max_nunits=4, refcnt=1) vector(4) unsigned int
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:31:69: note: op template: _30 = (unsigned int) _29;
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:31:69: note: 	stmt 0 _30 = (unsigned int) _29;
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:31:69: note: 	stmt 1 _26 = (unsigned int) _25;
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:31:69: note: 	stmt 2 _22 = (unsigned int) _21;
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:31:69: note: 	stmt 3 _15 = (unsigned int) _14;
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:31:69: note: 	children 0x8c8960740
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:31:69: note: node (external) 0x8c8960740 (max_nunits=1, refcnt=1) vector(2) long unsigned int
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:31:69: note: 	{ _29, _25, _21, _14 }
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:31:69: note: Cost model analysis: 
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:31:69: note: Cost model analysis for part in loop 3:
+  Vector cost: 14
+  Scalar cost: 8
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:31:69: missed: not vectorized: vectorization is not profitable.
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:31:69: note: ***** The result for vector mode V16QI would be the same
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:31:69: note: ***** The result for vector mode V8QI would be the same
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:31:69: note: ***** The result for vector mode V4HI would be the same
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:31:69: note: ***** Re-trying analysis with vector mode V2SI
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c:21:16: note: ***** Analysis failed with vector mode V2SI

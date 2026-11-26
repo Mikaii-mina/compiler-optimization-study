@@ -1,0 +1,406 @@
+{
+  "run_id": "20261126T142639Z-timercheck-51013",
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "machine": "arm64",
+  "clock": "mach_absolute_time with mach_timebase_info",
+  "probe_iterations": 1000000,
+  "cross_check": "CLOCK_MONOTONIC over 20 ms sleep, tolerance 5%",
+  "matrix_configs": 48,
+  "samples_per_config": 5,
+  "source_sha256": "ea641e3b85a38d1f0d8192c47b2b37d7578f1769ef68d71a338bc1728e4b8475",
+  "compiler_versions": {
+    "gcc": "gcc-16 (Homebrew GCC 16.2.0) 16.2.0",
+    "clang": "Apple clang version 21.0.0 (clang-2100.1.1.101)"
+  },
+  "probe_results": {
+    "gcc": "timebase_numer=125\\ntimebase_denom=3\\nbackwards=0\\npositive_steps=225052\\nmin_tick_delta=1\\nmach_elapsed_ns=20494541\\nclock_gettime_elapsed_ns=20495000\\n",
+    "clang": "timebase_numer=125\\ntimebase_denom=3\\nbackwards=0\\npositive_steps=224662\\nmin_tick_delta=1\\nmach_elapsed_ns=22712708\\nclock_gettime_elapsed_ns=22712000\\n"
+  },
+  "smoke_results": [
+    {
+      "compiler": "gcc",
+      "optimization": "O0",
+      "benchmark": "vector_add",
+      "samples": 5,
+      "min_total_ns": 39988375,
+      "max_iterations": 1024
+    },
+    {
+      "compiler": "gcc",
+      "optimization": "O0",
+      "benchmark": "reduction",
+      "samples": 5,
+      "min_total_ns": 16816792,
+      "max_iterations": 1024
+    },
+    {
+      "compiler": "gcc",
+      "optimization": "O0",
+      "benchmark": "conditional",
+      "samples": 5,
+      "min_total_ns": 19869375,
+      "max_iterations": 512
+    },
+    {
+      "compiler": "gcc",
+      "optimization": "O0",
+      "benchmark": "stencil",
+      "samples": 5,
+      "min_total_ns": 34089458,
+      "max_iterations": 8
+    },
+    {
+      "compiler": "gcc",
+      "optimization": "O0",
+      "benchmark": "strided",
+      "samples": 5,
+      "min_total_ns": 38277083,
+      "max_iterations": 1024
+    },
+    {
+      "compiler": "gcc",
+      "optimization": "O0",
+      "benchmark": "indirect_gather",
+      "samples": 5,
+      "min_total_ns": 38423708,
+      "max_iterations": 1024
+    },
+    {
+      "compiler": "gcc",
+      "optimization": "O0",
+      "benchmark": "histogram",
+      "samples": 5,
+      "min_total_ns": 36565416,
+      "max_iterations": 1024
+    },
+    {
+      "compiler": "gcc",
+      "optimization": "O0",
+      "benchmark": "float_reduction",
+      "samples": 5,
+      "min_total_ns": 36402333,
+      "max_iterations": 1024
+    },
+    {
+      "compiler": "gcc",
+      "optimization": "O2",
+      "benchmark": "vector_add",
+      "samples": 5,
+      "min_total_ns": 4780791,
+      "max_iterations": 1024
+    },
+    {
+      "compiler": "gcc",
+      "optimization": "O2",
+      "benchmark": "reduction",
+      "samples": 5,
+      "min_total_ns": 4633833,
+      "max_iterations": 1024
+    },
+    {
+      "compiler": "gcc",
+      "optimization": "O2",
+      "benchmark": "conditional",
+      "samples": 5,
+      "min_total_ns": 1208958,
+      "max_iterations": 1024
+    },
+    {
+      "compiler": "gcc",
+      "optimization": "O2",
+      "benchmark": "stencil",
+      "samples": 5,
+      "min_total_ns": 32256625,
+      "max_iterations": 128
+    },
+    {
+      "compiler": "gcc",
+      "optimization": "O2",
+      "benchmark": "strided",
+      "samples": 5,
+      "min_total_ns": 4740458,
+      "max_iterations": 1024
+    },
+    {
+      "compiler": "gcc",
+      "optimization": "O2",
+      "benchmark": "indirect_gather",
+      "samples": 5,
+      "min_total_ns": 5395667,
+      "max_iterations": 1024
+    },
+    {
+      "compiler": "gcc",
+      "optimization": "O2",
+      "benchmark": "histogram",
+      "samples": 5,
+      "min_total_ns": 4857042,
+      "max_iterations": 1024
+    },
+    {
+      "compiler": "gcc",
+      "optimization": "O2",
+      "benchmark": "float_reduction",
+      "samples": 5,
+      "min_total_ns": 11358417,
+      "max_iterations": 1024
+    },
+    {
+      "compiler": "gcc",
+      "optimization": "O3",
+      "benchmark": "vector_add",
+      "samples": 5,
+      "min_total_ns": 1173625,
+      "max_iterations": 1024
+    },
+    {
+      "compiler": "gcc",
+      "optimization": "O3",
+      "benchmark": "reduction",
+      "samples": 5,
+      "min_total_ns": 2225750,
+      "max_iterations": 1024
+    },
+    {
+      "compiler": "gcc",
+      "optimization": "O3",
+      "benchmark": "conditional",
+      "samples": 5,
+      "min_total_ns": 1469791,
+      "max_iterations": 1024
+    },
+    {
+      "compiler": "gcc",
+      "optimization": "O3",
+      "benchmark": "stencil",
+      "samples": 5,
+      "min_total_ns": 32271666,
+      "max_iterations": 128
+    },
+    {
+      "compiler": "gcc",
+      "optimization": "O3",
+      "benchmark": "strided",
+      "samples": 5,
+      "min_total_ns": 4674958,
+      "max_iterations": 1024
+    },
+    {
+      "compiler": "gcc",
+      "optimization": "O3",
+      "benchmark": "indirect_gather",
+      "samples": 5,
+      "min_total_ns": 5381042,
+      "max_iterations": 1024
+    },
+    {
+      "compiler": "gcc",
+      "optimization": "O3",
+      "benchmark": "histogram",
+      "samples": 5,
+      "min_total_ns": 4851917,
+      "max_iterations": 1024
+    },
+    {
+      "compiler": "gcc",
+      "optimization": "O3",
+      "benchmark": "float_reduction",
+      "samples": 5,
+      "min_total_ns": 11381291,
+      "max_iterations": 1024
+    },
+    {
+      "compiler": "clang",
+      "optimization": "O0",
+      "benchmark": "vector_add",
+      "samples": 5,
+      "min_total_ns": 17448834,
+      "max_iterations": 1024
+    },
+    {
+      "compiler": "clang",
+      "optimization": "O0",
+      "benchmark": "reduction",
+      "samples": 5,
+      "min_total_ns": 10979542,
+      "max_iterations": 1024
+    },
+    {
+      "compiler": "clang",
+      "optimization": "O0",
+      "benchmark": "conditional",
+      "samples": 5,
+      "min_total_ns": 18702958,
+      "max_iterations": 1024
+    },
+    {
+      "compiler": "clang",
+      "optimization": "O0",
+      "benchmark": "stencil",
+      "samples": 5,
+      "min_total_ns": 32692583,
+      "max_iterations": 8
+    },
+    {
+      "compiler": "clang",
+      "optimization": "O0",
+      "benchmark": "strided",
+      "samples": 5,
+      "min_total_ns": 13730459,
+      "max_iterations": 1024
+    },
+    {
+      "compiler": "clang",
+      "optimization": "O0",
+      "benchmark": "indirect_gather",
+      "samples": 5,
+      "min_total_ns": 16023042,
+      "max_iterations": 1024
+    },
+    {
+      "compiler": "clang",
+      "optimization": "O0",
+      "benchmark": "histogram",
+      "samples": 5,
+      "min_total_ns": 12866958,
+      "max_iterations": 1024
+    },
+    {
+      "compiler": "clang",
+      "optimization": "O0",
+      "benchmark": "float_reduction",
+      "samples": 5,
+      "min_total_ns": 11618042,
+      "max_iterations": 1024
+    },
+    {
+      "compiler": "clang",
+      "optimization": "O2",
+      "benchmark": "vector_add",
+      "samples": 5,
+      "min_total_ns": 887792,
+      "max_iterations": 1024
+    },
+    {
+      "compiler": "clang",
+      "optimization": "O2",
+      "benchmark": "reduction",
+      "samples": 5,
+      "min_total_ns": 561458,
+      "max_iterations": 1024
+    },
+    {
+      "compiler": "clang",
+      "optimization": "O2",
+      "benchmark": "conditional",
+      "samples": 5,
+      "min_total_ns": 1438041,
+      "max_iterations": 1024
+    },
+    {
+      "compiler": "clang",
+      "optimization": "O2",
+      "benchmark": "stencil",
+      "samples": 5,
+      "min_total_ns": 32592250,
+      "max_iterations": 128
+    },
+    {
+      "compiler": "clang",
+      "optimization": "O2",
+      "benchmark": "strided",
+      "samples": 5,
+      "min_total_ns": 4147750,
+      "max_iterations": 1024
+    },
+    {
+      "compiler": "clang",
+      "optimization": "O2",
+      "benchmark": "indirect_gather",
+      "samples": 5,
+      "min_total_ns": 2505167,
+      "max_iterations": 1024
+    },
+    {
+      "compiler": "clang",
+      "optimization": "O2",
+      "benchmark": "histogram",
+      "samples": 5,
+      "min_total_ns": 4646583,
+      "max_iterations": 1024
+    },
+    {
+      "compiler": "clang",
+      "optimization": "O2",
+      "benchmark": "float_reduction",
+      "samples": 5,
+      "min_total_ns": 9620709,
+      "max_iterations": 1024
+    },
+    {
+      "compiler": "clang",
+      "optimization": "O3",
+      "benchmark": "vector_add",
+      "samples": 5,
+      "min_total_ns": 870417,
+      "max_iterations": 1024
+    },
+    {
+      "compiler": "clang",
+      "optimization": "O3",
+      "benchmark": "reduction",
+      "samples": 5,
+      "min_total_ns": 561375,
+      "max_iterations": 1024
+    },
+    {
+      "compiler": "clang",
+      "optimization": "O3",
+      "benchmark": "conditional",
+      "samples": 5,
+      "min_total_ns": 1339667,
+      "max_iterations": 1024
+    },
+    {
+      "compiler": "clang",
+      "optimization": "O3",
+      "benchmark": "stencil",
+      "samples": 5,
+      "min_total_ns": 30437583,
+      "max_iterations": 128
+    },
+    {
+      "compiler": "clang",
+      "optimization": "O3",
+      "benchmark": "strided",
+      "samples": 5,
+      "min_total_ns": 4198875,
+      "max_iterations": 1024
+    },
+    {
+      "compiler": "clang",
+      "optimization": "O3",
+      "benchmark": "indirect_gather",
+      "samples": 5,
+      "min_total_ns": 2509833,
+      "max_iterations": 1024
+    },
+    {
+      "compiler": "clang",
+      "optimization": "O3",
+      "benchmark": "histogram",
+      "samples": 5,
+      "min_total_ns": 4654750,
+      "max_iterations": 1024
+    },
+    {
+      "compiler": "clang",
+      "optimization": "O3",
+      "benchmark": "float_reduction",
+      "samples": 5,
+      "min_total_ns": 9615125,
+      "max_iterations": 1024
+    }
+  ],
+  "success": true
+}

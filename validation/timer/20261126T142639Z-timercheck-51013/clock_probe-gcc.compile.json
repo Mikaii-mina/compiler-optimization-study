@@ -1,0 +1,10 @@
+[
+  "/opt/homebrew/bin/gcc-16",
+  "-std=c11",
+  "-Wall",
+  "-Wextra",
+  "-Werror",
+  "/Users/miramikaii/Desktop/\u9879\u76ee/compiler-optimization-study/raw-results/timer-validation/20261126T142639Z-timercheck-51013/clock_probe.c",
+  "-o",
+  "/Users/miramikaii/Desktop/\u9879\u76ee/compiler-optimization-study/raw-results/timer-validation/20261126T142639Z-timercheck-51013/clock_probe-gcc"
+]

@@ -1,0 +1,32 @@
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/indirect_gather.c:7:26: missed: couldn't vectorize loop
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/indirect_gather.c:7:26: missed: Loop costings may not be worthwhile.
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/indirect_gather.c:4:6: note: vectorized 0 loops in function.
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/indirect_gather.c:10:1: note: ***** Analysis failed with vector mode V2DI
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/indirect_gather.c:10:1: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V2DI
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/indirect_gather.c:27:26: missed: couldn't vectorize loop
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/indirect_gather.c:27:26: missed: unsupported SLP instances
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/indirect_gather.c:7:26: missed: couldn't vectorize loop
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/indirect_gather.c:7:26: missed: Loop costings may not be worthwhile.
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/indirect_gather.c:21:26: missed: couldn't vectorize loop
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/indirect_gather.c:21:26: missed: unsupported SLP instances
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/indirect_gather.c:12:5: note: vectorized 0 loops in function.
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/indirect_gather.c:13:27: missed: statement clobbers memory: n_38 = strtoul (_1, 0B, 10);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/indirect_gather.c:15:17: missed: statement clobbers memory: data_40 = malloc (_3);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/indirect_gather.c:16:21: missed: statement clobbers memory: index_42 = malloc (_4);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/indirect_gather.c:17:19: missed: statement clobbers memory: output_44 = malloc (_3);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/indirect_gather.c:34:5: missed: statement clobbers memory: printf ("PASS indirect_gather n=%zu checksum=%lld\n", n_57, checksum_108);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/indirect_gather.c:35:5: missed: statement clobbers memory: free (data_40);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/indirect_gather.c:35:17: missed: statement clobbers memory: free (index_42);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/indirect_gather.c:35:30: missed: statement clobbers memory: free (output_44);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/indirect_gather.c:30:13: missed: statement clobbers memory: free (data_40);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/indirect_gather.c:30:25: missed: statement clobbers memory: free (index_42);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/indirect_gather.c:30:38: missed: statement clobbers memory: free (output_44);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/indirect_gather.c:19:9: missed: statement clobbers memory: free (data_40);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/indirect_gather.c:19:21: missed: statement clobbers memory: free (index_42);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/indirect_gather.c:19:34: missed: statement clobbers memory: free (output_44);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/indirect_gather.c:12:5: note: ***** Analysis failed with vector mode V2DI
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/indirect_gather.c:12:5: note: ***** The result for vector mode V16QI would be the same
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/indirect_gather.c:12:5: note: ***** The result for vector mode V8QI would be the same
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/indirect_gather.c:12:5: note: ***** The result for vector mode V4HI would be the same
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/indirect_gather.c:12:5: note: ***** Re-trying analysis with vector mode V2SI
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/indirect_gather.c:12:5: note: ***** Analysis failed with vector mode V2SI

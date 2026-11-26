@@ -1,0 +1,29 @@
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/histogram.c:10:9: remark: loop not vectorized: unsafe dependent memory operations in loop. Use #pragma clang loop distribute(enable) to allow loop distribution to attempt to isolate the offending operations into a separate loop
+Unsafe indirect dependence. Memory location is the same as accessed at runs/20261126T180718Z-55476/raw/sources/benchmarks/histogram.c:10:11 [-Rpass-analysis=loop-vectorize]
+   10 |         ++buckets[input[i]];
+      |         ^
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/histogram.c:9:5: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+    9 |     for (size_t i = 0; i < n; ++i) {
+      |     ^
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/histogram.c:21:5: remark: the cost-model indicates that vectorization is not beneficial [-Rpass-analysis=loop-vectorize]
+   21 |     for (size_t i = 0; i < n; ++i) {
+      |     ^
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/histogram.c:21:5: remark: interleaved loop (interleaved count: 4) [-Rpass=loop-vectorize]
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/histogram.c:10:9: remark: loop not vectorized: unsafe dependent memory operations in loop. Use #pragma clang loop distribute(enable) to allow loop distribution to attempt to isolate the offending operations into a separate loop
+Unsafe indirect dependence. Memory location is the same as accessed at runs/20261126T180718Z-55476/raw/sources/benchmarks/histogram.c:10:11 [-Rpass-analysis=loop-vectorize]
+   10 |         ++buckets[input[i]];
+      |         ^
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/histogram.c:9:5: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+    9 |     for (size_t i = 0; i < n; ++i) {
+      |     ^
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/histogram.c:25:36: remark: loop not vectorized: unsafe dependent memory operations in loop. Use #pragma clang loop distribute(enable) to allow loop distribution to attempt to isolate the offending operations into a separate loop
+Unsafe indirect dependence. Memory location is the same as accessed at runs/20261126T180718Z-55476/raw/sources/benchmarks/histogram.c:25:38 [-Rpass-analysis=loop-vectorize]
+   25 |     for (size_t i = 0; i < n; ++i) ++expected[input[i]];
+      |                                    ^
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/histogram.c:25:5: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+   25 |     for (size_t i = 0; i < n; ++i) ++expected[input[i]];
+      |     ^
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/histogram.c:27:5: remark: loop not vectorized: Cannot vectorize early exit loop with reductions or recurrences [-Rpass-analysis=loop-vectorize]
+   27 |     for (size_t bucket = 0; bucket < BUCKETS; ++bucket) {
+      |     ^
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/histogram.c:27:5: remark: loop not vectorized [-Rpass-missed=loop-vectorize]

@@ -1,0 +1,68 @@
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:6:26: optimized: loop vectorized using 16 byte vectors and unroll factor 4
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:4:6: note: vectorized 1 loops in function.
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:7:23: note: ***** Analysis failed with vector mode V4SI
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:7:23: note: ***** The result for vector mode V16QI would be the same
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:7:23: note: ***** The result for vector mode V8QI would be the same
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:7:23: note: ***** The result for vector mode V4HI would be the same
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:7:23: note: ***** Re-trying analysis with vector mode V2SI
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:7:23: note: ***** Analysis failed with vector mode V2SI
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:19:26: missed: couldn't vectorize loop
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:19:26: missed: unsupported SLP instances
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:6:26: optimized: loop vectorized using 16 byte vectors and unroll factor 4
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:16:26: missed: couldn't vectorize loop
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:16:26: missed: unsupported SLP instances
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:11:5: note: vectorized 1 loops in function.
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:12:27: missed: statement clobbers memory: n_34 = strtoul (_1, 0B, 10);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:14:14: missed: statement clobbers memory: a_36 = malloc (_3);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:14:42: missed: statement clobbers memory: b_38 = malloc (_3);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:14:72: missed: statement clobbers memory: out_40 = malloc (_3);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:23:5: missed: statement clobbers memory: printf ("PASS vector_add n=%zu checksum=%lld\n", n_48, checksum_88);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:24:5: missed: statement clobbers memory: free (a_36);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:24:14: missed: statement clobbers memory: free (b_38);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:24:23: missed: statement clobbers memory: free (out_40);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: note: ***** Analysis succeeded with vector mode V2DI
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: note: SLPing BB part
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: note: Costing subgraph: 
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: note: node 0xad48904a0 (max_nunits=2, refcnt=1) vector(2) unsigned int
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: note: op template: _18 = (unsigned int) _17;
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: note: 	stmt 0 _18 = (unsigned int) _17;
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: note: 	stmt 1 _20 = (unsigned int) _19;
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: note: 	children 0xad4890548
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: note: node (external) 0xad4890548 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: note: 	stmt 0 _17 = i_74 % 97;
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: note: 	stmt 1 _19 = i_74 % 31;
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: note: 	children 0xad48905f0 0xad4890698
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: note: node (external) 0xad48905f0 (max_nunits=1, refcnt=1)
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: note: 	{ i_74, i_74 }
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: note: node (constant) 0xad4890698 (max_nunits=1, refcnt=1)
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: note: 	{ 97, 31 }
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: note: Cost model analysis: 
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: note: Cost model analysis for part in loop 2:
+  Vector cost: 8
+  Scalar cost: 3
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: missed: not vectorized: vectorization is not profitable.
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: note: ***** The result for vector mode V16QI would be the same
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: note: ***** The result for vector mode V8QI would be the same
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: note: ***** The result for vector mode V4HI would be the same
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: note: ***** Re-trying analysis with vector mode V2SI
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: note: ***** Analysis succeeded with vector mode V2SI
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: note: SLPing BB part
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: note: Costing subgraph: 
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: note: node 0xad48903f8 (max_nunits=2, refcnt=1) vector(2) unsigned int
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: note: op template: _18 = (unsigned int) _17;
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: note: 	stmt 0 _18 = (unsigned int) _17;
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: note: 	stmt 1 _20 = (unsigned int) _19;
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: note: 	children 0xad48900b0
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: note: node (external) 0xad48900b0 (max_nunits=2, refcnt=1) vector(2) long unsigned int
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: note: 	stmt 0 _17 = i_74 % 97;
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: note: 	stmt 1 _19 = i_74 % 31;
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: note: 	children 0xad48902a8 0xad4890350
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: note: node (external) 0xad48902a8 (max_nunits=1, refcnt=1)
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: note: 	{ i_74, i_74 }
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: note: node (constant) 0xad4890350 (max_nunits=1, refcnt=1)
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: note: 	{ 97, 31 }
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: note: Cost model analysis: 
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: note: Cost model analysis for part in loop 2:
+  Vector cost: 8
+  Scalar cost: 3
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:20:36: missed: not vectorized: vectorization is not profitable.

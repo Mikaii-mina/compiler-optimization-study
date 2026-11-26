@@ -1,0 +1,61 @@
+{
+  "assembly": [
+    "/usr/bin/clang",
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-O3",
+    "-Rpass=loop-vectorize",
+    "-Rpass-missed=loop-vectorize",
+    "-Rpass-analysis=loop-vectorize",
+    "-S",
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c",
+    "-o",
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/clang/stencil-O3/benchmark.s"
+  ],
+  "compile": [
+    "/usr/bin/clang",
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-O3",
+    "-Rpass=loop-vectorize",
+    "-Rpass-missed=loop-vectorize",
+    "-Rpass-analysis=loop-vectorize",
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c",
+    "-o",
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/clang/stencil-O3/correctness.exe"
+  ],
+  "kernel_object": [
+    "/usr/bin/clang",
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-O3",
+    "-Dmain=benchmark_original_main",
+    "-c",
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/stencil.c",
+    "-o",
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/clang/stencil-O3/kernel.o"
+  ],
+  "timing_exe": [
+    "/usr/bin/clang",
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-O2",
+    "-DBENCHMARK_ID=4",
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/scripts/timing_harness.c",
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/clang/stencil-O3/kernel.o",
+    "-o",
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/clang/stencil-O3/timing.exe"
+  ],
+  "correctness_small": [
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/clang/stencil-O3/correctness.exe",
+    "256"
+  ],
+  "correctness_large": [
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/clang/stencil-O3/correctness.exe",
+    "1024"
+  ]
+}

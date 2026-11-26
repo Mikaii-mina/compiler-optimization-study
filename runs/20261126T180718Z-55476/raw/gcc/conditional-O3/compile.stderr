@@ -1,0 +1,22 @@
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/conditional.c:6:26: optimized: loop vectorized using 16 byte vectors and unroll factor 4
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/conditional.c:4:6: note: vectorized 1 loops in function.
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/conditional.c:10:1: note: ***** Analysis failed with vector mode V4SI
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/conditional.c:10:1: note: ***** Skipping vector mode V16QI, which would repeat the analysis for V4SI
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/conditional.c:20:26: missed: couldn't vectorize loop
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/conditional.c:20:26: missed: not vectorized: unsupported control flow in loop.
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/conditional.c:6:26: optimized: loop vectorized using 16 byte vectors and unroll factor 4
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/conditional.c:17:26: missed: couldn't vectorize loop
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/conditional.c:17:26: missed: unsupported SLP instances
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/conditional.c:12:5: note: vectorized 1 loops in function.
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/conditional.c:13:27: missed: statement clobbers memory: n_27 = strtoul (_1, 0B, 10);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/conditional.c:15:14: missed: statement clobbers memory: a_29 = malloc (_3);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/conditional.c:15:44: missed: statement clobbers memory: out_31 = malloc (_3);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/conditional.c:26:5: missed: statement clobbers memory: printf ("PASS conditional n=%zu checksum=%lld\n", n_41, checksum_56);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/conditional.c:27:5: missed: statement clobbers memory: free (a_29);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/conditional.c:27:14: missed: statement clobbers memory: free (out_31);
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/conditional.c:16:12: note: ***** Analysis failed with vector mode V2DI
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/conditional.c:16:12: note: ***** The result for vector mode V16QI would be the same
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/conditional.c:16:12: note: ***** The result for vector mode V8QI would be the same
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/conditional.c:16:12: note: ***** The result for vector mode V4HI would be the same
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/conditional.c:16:12: note: ***** Re-trying analysis with vector mode V2SI
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/conditional.c:16:12: note: ***** Analysis failed with vector mode V2SI

@@ -1,0 +1,14 @@
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:6:5: remark: vectorized loop (vectorization width: 4, interleaved count: 4) [-Rpass=loop-vectorize]
+    6 |     for (size_t i = 0; i < n; ++i) {
+      |     ^
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:16:5: remark: the cost-model indicates that vectorization is not beneficial [-Rpass-analysis=loop-vectorize]
+   16 |     for (size_t i = 0; i < n; ++i) { a[i] = (int)(i % 97); b[i] = (int)(i % 31); }
+      |     ^
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:16:5: remark: interleaved loop (interleaved count: 4) [-Rpass=loop-vectorize]
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:6:5: remark: vectorized loop (vectorization width: 4, interleaved count: 4) [-Rpass=loop-vectorize]
+    6 |     for (size_t i = 0; i < n; ++i) {
+      |     ^
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:19:5: remark: loop not vectorized: Cannot vectorize early exit loop with reductions or recurrences [-Rpass-analysis=loop-vectorize]
+   19 |     for (size_t i = 0; i < n; ++i) {
+      |     ^
+/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/vector_add.c:19:5: remark: loop not vectorized [-Rpass-missed=loop-vectorize]

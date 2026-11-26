@@ -1,0 +1,57 @@
+{
+  "assembly": [
+    "/opt/homebrew/bin/gcc-16",
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-O2",
+    "-fopt-info-vec-all",
+    "-S",
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/reduction.c",
+    "-o",
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/gcc/reduction-O2/benchmark.s"
+  ],
+  "compile": [
+    "/opt/homebrew/bin/gcc-16",
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-O2",
+    "-fopt-info-vec-all",
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/reduction.c",
+    "-o",
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/gcc/reduction-O2/correctness.exe"
+  ],
+  "kernel_object": [
+    "/opt/homebrew/bin/gcc-16",
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-O2",
+    "-Dmain=benchmark_original_main",
+    "-c",
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/benchmarks/reduction.c",
+    "-o",
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/gcc/reduction-O2/kernel.o"
+  ],
+  "timing_exe": [
+    "/opt/homebrew/bin/gcc-16",
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-O2",
+    "-DBENCHMARK_ID=2",
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/sources/scripts/timing_harness.c",
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/gcc/reduction-O2/kernel.o",
+    "-o",
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/gcc/reduction-O2/timing.exe"
+  ],
+  "correctness_small": [
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/gcc/reduction-O2/correctness.exe",
+    "32768"
+  ],
+  "correctness_large": [
+    "/Users/miramikaii/Desktop/项目/compiler-optimization-study/runs/20261126T180718Z-55476/raw/gcc/reduction-O2/correctness.exe",
+    "1000000"
+  ]
+}
